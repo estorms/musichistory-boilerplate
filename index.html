@@ -1,13 +1,88 @@
 <!doctype html>
-
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Music History</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Music History</title>
+    </head>
+    <body>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href=#>View Music | </a></li>
+                    <li><a href=#>Add Music | </a></li>
+                    <li><a href=#>Profile </a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="left_sidebar">
+            <label for='song_length'>Song Length</label>
+            <p class="border_please">
+                <input type='range' name='song_length' class='song_length' id='song_length' min='0' max='10'>
+            </p>
+            <p>
+                <label for="artist">
+                    <span>Artist</span>
+                    </label>
+                    </p>
+                    <select id="artist" name="artist">
+                        <option value="Kenny G">Kenny G</option>
+                        <option value="DeepaQ">DeepaQ</option>
+                        <option value="Wilson Phillips">Wilson Phillips</option>
+                        <option value="Your Best Friend's Mom">Your Best Friend's Mom</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+             <label for="album">
+                    <span>Album</span>
+                    <p>
+                    <select id="album" name="album">
+                        <option value="Kenny G">Kenny G</option>
+                        <option value="DeepaQ">DeepaQ</option>
+                        <option value="Wilson Phillips">Wilson Phillips</option>
+                        <<option value="Your Best Friend's Mom">Your Best Friend's Mom</option>
+                    </select>
+                    </p>
+                </label>
+            </p>
+            <label for='rock'>Rock</label>
+            <input type='checkbox' name='rock' class='rock' id='rock'>
+            <label for='jazz'>Jazz</label>
+            <input type='checkbox' name='jazz' class='jazz' id='jazz'>
+            <label for='Pop'>Pop</label>
+            <input type='checkbox' name='pop' class='pop' id='pop'>
+             <p>
+            <label for='Punk'>Punk</label>
 
-<body>
-
-
-</body>
+            <input type='checkbox' name='punk' class='punk' id='punk'>
+            <label for='classical'>Classical</label>
+            <input type='checkbox' name='classic' class='classical' id='classical'>
+            <label for='jazz'>Blues</label>
+            <input type='checkbox' name='blues' class='blues' id='blues'>
+            </p>
+            <p class="filt_butt">
+            <input type="button" value='Filter' name="filter" class ='filter' id='filter'>
+            </p>
+        </div>
+        <div id='songbox'>
+            <div class="song_detail">
+                <h1>Song Name</h1>
+                <p><ul><li>Artist Name&nbsp; | &nbsp;</li><li>&nbsp;Album Name&nbsp; | &nbsp;</li><li> Genre</li></ul></p>
+            </div>
+            <div class="song_detail">
+                <h1>Song Name</h1>
+                <p><ul><li>Artist Name&nbsp; | &nbsp;</li><li>&nbsp;Album Name&nbsp; | &nbsp;</li><li> Genre</li></ul></p>
+            </div>
+            <div class="song_detail">
+                <h1>Song Name</h1>
+                <p><ul><li>Artist Name&nbsp; | &nbsp;</li><li>&nbsp;Album Name&nbsp; | &nbsp;</li><li> Genre</li></ul></p>
+            </div>
+            <div class="song_detail">
+                <h1>Song Name</h1>
+                <p><ul><li>Artist Name&nbsp; | &nbsp;</li><li>&nbsp;Album Name&nbsp; | &nbsp;</li><li> Genre</li></ul></p>
+            </div>
+        </div>
+        <script type="text/javascript" src="songs.js"></script>
+    </body>
 </html>

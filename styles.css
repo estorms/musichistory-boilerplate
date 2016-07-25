@@ -1,0 +1,88 @@
+/* BASE PAGE STYLES */
+
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAV BAR STYLING */
+
+nav {
+    background-color: #FFB4B0;
+    border: 2px solid black;
+
+}
+
+nav ul {
+
+    text-align: left;
+}
+
+nav ul li {
+    display: inline-block;
+
+}
+
+/* LEFT SIDEBAR STYLING */
+
+#left_sidebar {
+    background-color: #4DD7FA;
+    border: 2px solid black;
+    float: left;
+    margin: 10px;
+    width: 20%;
+    height: 400px;
+
+}
+ #song_length input {
+    background-color: white;
+    border: 1px solid black;
+ }
+
+ /*.border_please {
+    border: 2px solid black;
+    background-color: white;
+    text-align: left;
+    max-width: 70%;
+}*/
+
+#filter {
+    width: 70%;
+}
+
+/* SONG DISPLAY STYLING */
+
+#songbox {
+    border: 2px solid black;
+    background-color: #FEFAC0;
+    margin-top: 10px;
+    float: left;
+    width: 70%;
+    height: 400px;
+    padding-bottom: 10px;
+}
+
+.song_detail h1 {
+    color: #785616;
+    font-weight: 500;
+    margin-left: 37px;
+}
+
+.song_detail ul {
+    text-align: left;
+}
+
+.song_detail ul li {
+    display: inline-block;
+}
+
+
+
