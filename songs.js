@@ -9,19 +9,19 @@ songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little
 // console.log(songs);
 // console.log(songs.join(','));
 console.log(songs.join(','));
-
+songs.push("Starman, by David Bowie", "Kenny G's Greatest Hits, by Kenny G")
 songs.forEach(outputSongs);
 
 // //TAKE JOIN OUTSIDE OF LOOP//THIS IS YOUR ISSUE
 
 function outputSongs(song) {
-
+    // songs.push("Starman, by David Bowie");
     // var updated_songs = song.join(',');
-    songs = song.replace('>', '-').replace(/[@/\(/!/\*/]/g,'');
+    songs = song.replace('>', '-').replace(/[@/\(/!/\*/]/g,'').split('-');
 
-    document.getElementById("songbox").innerText += songs;
+    document.getElementById("songbox").innerHTML += `<h1>${songs}</h1>`;
     console.log(songs);
 }
 
 
-songs.
+
