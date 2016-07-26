@@ -39,7 +39,7 @@ nav ul li {
     float: left;
     margin: 10px;
     width: 20%;
-    height: 400px;
+    height: 700px;
 
 }
  #song_length input {
@@ -66,8 +66,12 @@ nav ul li {
     margin-top: 10px;
     float: left;
     width: 70%;
-    height: 500px;
+    height: 700px;
     padding-bottom: 10px;
+    color: #785616;
+
+
+
 }
 
 /*.song_detail h1 {

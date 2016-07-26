@@ -12,14 +12,15 @@ console.log(songs.join(','));
 songs.push("Starman, by David Bowie", "Kenny G's Greatest Hits, by Kenny G")
 songs.forEach(outputSongs);
 
-// //TAKE JOIN OUTSIDE OF LOOP//THIS IS YOUR ISSUE
+
 
 function outputSongs(song) {
     // songs.push("Starman, by David Bowie");
     // var updated_songs = song.join(',');
-    songs = song.replace('>', '-').replace(/[@/\(/!/\*/]/g,'').split('-');
+    var updated = [];
+    updated = song.replace('>', '-').replace(/[@/\(/!/\*/]/g,'').split('-');
 
-    document.getElementById("songbox").innerHTML += `<h1>${songs}</h1>`;
+    document.getElementById("songbox").innerHTML += `<h2>${updated}</h2><br>`;
     console.log(songs);
 }
 
