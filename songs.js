@@ -1,3 +1,15 @@
+(function() {
+
+function addToDOM() {
+    var h2 = document.createElement("h2");
+    var node = document.createTextNode('Song Title');
+    h2.appendChild(node);
+    var appendTo = document.getElementById('songbox');
+    appendTo.appendChild(h2);
+};
+
+addToDOM();
+
 var songs = [];
 
 songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
@@ -6,23 +18,26 @@ songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album Th
 songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
 songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
 
-// console.log(songs);
-// console.log(songs.join(','));
-console.log(songs.join(','));
 songs.push("Starman, by David Bowie", "Kenny G's Greatest Hits, by Kenny G")
+
 songs.forEach(outputSongs);
 
-
-
 function outputSongs(song) {
-    // songs.push("Starman, by David Bowie");
-    // var updated_songs = song.join(',');
     var updated = [];
     updated = song.replace('>', '-').replace(/[@/\(/!/\*/]/g,'').split('-');
-
     document.getElementById("songbox").innerHTML += `<h2>${updated}</h2><br>`;
-    console.log(songs);
 }
+
+})();
+
+(function() {
+var newSongs = document.createDocumentFragment();
+
+for (var i = 0; i < updated.length; i++) {
+    var headings = newSongs.appendChild(new h1(songs[i]));
+}
+document.getElementById("songbox").appendChild(msgContainer);
+})();
 
 
 
