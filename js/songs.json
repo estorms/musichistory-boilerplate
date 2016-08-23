@@ -1,0 +1,22 @@
+{
+    "songs": [
+        {
+            "title": "Personal",
+            "artist": "Zero",
+            "album": "Dudes"
+           },
+
+        {
+            "title": "Impersonal",
+            "artist": "Zero",
+            "album": "Dudes"
+        },
+
+        {
+             "title": "Extremely Impersonal",
+            "artist": "Zero",
+            "album": "Dudes"
+        }
+
+    ]
+}
